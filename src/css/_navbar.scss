@@ -1,0 +1,141 @@
+@import "functions";
+
+$primary: #559ae9;
+$secondary: #202020;
+
+nav {
+  background-color: $primary;
+  background: linear-gradient(
+    90deg,
+    #559ae9 35%,
+    #bedbff 50%,
+    #559ae9 65% 100%
+  );
+  background-size: 400% 400%;
+  animation: headeranimation 10s infinite normal forwards running;
+  height: 10px;
+  border-bottom: 5px solid #a6c9f1;
+  padding: 7px 0;
+  div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      div {
+        width: 70px;
+        height: 70px;
+        background-color: #202020;
+        @include flexcenter();
+        padding: 5px;
+        box-sizing: content-box;
+        transition: 1s ease;
+        background: linear-gradient(
+          135deg,
+          $secondary 46%,
+          #202020 50%,
+          $secondary 50%
+        );
+        border: 3px solid transparent;
+        img {
+          filter: invert(1);
+        }
+        &:hover {
+          border-color: #fff;
+          background: linear-gradient(
+            135deg,
+            $secondary 46%,
+            rgba(255, 255, 255, 0.1) 50%,
+            $secondary 52%
+          );
+          background-size: 500% 500%;
+          animation: logoanimation 0.5s 1 ease-in;
+        }
+      }
+    }
+    .navitems {
+      flex: none;
+      ul {
+        list-style-type: none;
+        list-style-position: inside;
+        display: flex;
+        margin: 0;
+        li {
+          a {
+            color: $primary;
+            padding: 0 23px;
+            font-size: 18px;
+            transition: 0.5s ease-out;
+            outline: none;
+            text-decoration: none;
+            &:hover {
+              color: $secondary;
+              text-decoration: none;
+              // background-color: #94c4ff;
+            }
+            &:active,
+            &:focus {
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
+    .searchbar {
+      border-radius: 30px;
+      display: flex;
+      color: $secondary;
+      border: solid $secondary 2px;
+      input {
+        padding: 5px 3px;
+        border-radius: 20px;
+        border: none;
+        color: $secondary;
+        font-family: "Barlow Semi Condensed";
+        font-size: 14px;
+        font-weight: 100;
+        padding-left: 10px;
+        display: none;
+        box-sizing: border-box;
+        &::placeholder {
+          color: rgb(107, 107, 107);
+        }
+      }
+      button {
+        background: none !important;
+        border: none;
+        outline: none;
+        i {
+          clip-path: circle();
+          background-color: $secondary;
+          color: white;
+          padding: 10px;
+          &:active {
+            background-color: $primary;
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes headeranimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes logoanimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
