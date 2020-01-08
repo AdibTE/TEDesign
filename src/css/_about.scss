@@ -69,13 +69,22 @@
         color: #61dbfb;
       }
       &:nth-of-type(12):hover i {
-        color: #b52e31;
-      }
-      &:nth-of-type(13):hover i {
         color: #41b883;
       }
+      &:nth-of-type(13):hover i {
+        color: #026e00;
+      }
       &:nth-of-type(14):hover i {
+        color: #535353;
+      }
+      &:nth-of-type(15):hover i {
+        color: #4bb23e;
+      }
+      &:nth-of-type(16):hover i {
         color: #cc3534;
+      }
+      &:nth-of-type(17):hover i {
+        color: #000000;
       }
     }
     span:nth-of-type(1) {
