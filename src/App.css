@@ -71,7 +71,6 @@ nav ul .nav-logo {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	/* text-transform: uppercase; */
 }
 
 #home .bg-design {
@@ -91,10 +90,12 @@ nav ul .nav-logo {
 	transition: 4.9s ease-out;
 	transform: translate(-50vw, -50vh);
 }
+
 #home h1 {
     z-index: 2;
     font-family: 'Lobster';
 	font-size: 56px;
 	font-weight: 100;
 	opacity: 0.8;
+	text-shadow: 1px 1px 0px #92b8ff;
 }
