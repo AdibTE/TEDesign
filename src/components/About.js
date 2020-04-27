@@ -4,7 +4,7 @@ import avatar from '../images/avatar.jpg';
 const About = () => {
 	return (
 		<section id="about">
-			<h1 id="AboutLink">About</h1>
+			<h1>About</h1>
 			<div className="about-top">
 				<img data-aos="fade-in" src={avatar} alt="adibte" />
 				<p>
