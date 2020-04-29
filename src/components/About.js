@@ -8,7 +8,7 @@ const About = () => {
 			<div className="about-top">
 				<img data-aos="fade-in" src={avatar} alt="adibte" />
 				<p>
-					this is <span  data-aos="fade-right" data-aos-duration="3000">Adib Rohani's</span> personal website. He's a JavaScript full-stack developer located in Iran, Tehran and
+					This is <span  data-aos="fade-right" data-aos-duration="3000">Adib Rohani's</span> personal website. He's a JavaScript full-stack developer located in Iran, Tehran and
                     working with bunch of new technologies like React.js and Node.js.
 				</p>
 			</div>
